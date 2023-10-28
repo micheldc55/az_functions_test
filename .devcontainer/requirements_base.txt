@@ -1,0 +1,22 @@
+matplotlib
+plotly
+streamlit
+tiktoken
+pandas
+numpy
+scipy
+# email
+pypdf==3.14.0
+PyPDF2
+pdfminer
+textract
+openai
+python-dotenv
+sentence-transformers
+faiss-cpu
+torch
+transformers
+tqdm
+twilio
+unidecode
+ngrok==0.12.0
