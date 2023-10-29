@@ -21,13 +21,10 @@ COPY requirements.txt ./requirements.txt
 RUN apt-get update && apt-get install -y build-essential
 
 # Install python dependencies
-# Install setuptools and wheel before other dependencies
-# RUN pip3 install --no-cache-dir setuptools wheel 
-# RUN pip3 install --no-cache-dir email
 RUN pip3 install --no-cache-dir -r requirements.txt
 
 # Expose port 
-EXPOSE 8501
+EXPOSE 80
 
 # Run the command to start the app
 CMD ["streamlit", "run", "app.py"]
